@@ -1,8 +1,16 @@
 import Modal from 'react-modal';
 import css from './ImageModal.module.css';
+import { ImageData } from '../ImageGallery/ImageGallery';
 
-const ImageModal = ({ chosenImage, closeModal, modalIsOpen }) => {
+interface Props {
+  chosenImage: ImageData | null;
+  closeModal: () => void;
+  modalIsOpen: boolean;
+}
+
+const ImageModal = ({ chosenImage, closeModal, modalIsOpen }: Props) => {
   Modal.setAppElement('#root');
+
   return (
     <>
       {chosenImage !== null && (

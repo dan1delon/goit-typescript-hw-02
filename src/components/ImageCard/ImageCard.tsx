@@ -1,6 +1,12 @@
+import { ImageData } from '../ImageGallery/ImageGallery';
 import css from './ImageCard.module.css';
 
-const ImageCard = ({ data, openModal }) => {
+type Props = {
+  data: ImageData;
+  openModal: (data: ImageData | null) => void;
+};
+
+const ImageCard = ({ data, openModal }: Props) => {
   return (
     <div className={css.wrapper}>
       <img
