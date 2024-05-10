@@ -1,4 +1,4 @@
-import { ImageData } from '../ImageGallery/ImageGallery';
+import { ImageData } from '../../images-api';
 import css from './ImageCard.module.css';
 
 type Props = {

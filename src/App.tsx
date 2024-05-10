@@ -1,14 +1,12 @@
 import SearchBar from './components/SearchBar/SearchBar';
 import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import Loader from './components/Loader/Loader';
-import ImageGallery, {
-  ImageData,
-} from './components/ImageGallery/ImageGallery';
+import ImageGallery from './components/ImageGallery/ImageGallery';
 import ImageModal from './components/ImageModal/ImageModal';
 import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
 
 import { useState, useEffect, useRef } from 'react';
-import { fetchImagesWithQuery } from './images-api';
+import { ImageData, fetchImagesWithQuery } from './images-api';
 
 import css from './App.module.css';
 

@@ -1,20 +1,6 @@
+import { ImageData } from '../../images-api';
 import ImageCard from '../ImageCard/ImageCard';
 import css from './ImageGallery.module.css';
-
-export interface ImageData {
-  id: string;
-  urls: { small: string; regular: string };
-  alt_description: string;
-  description: string;
-  likes: number;
-  user: {
-    name: string;
-    bio: string;
-  };
-  links: {
-    download: string;
-  };
-}
 
 interface Props {
   images: ImageData[];

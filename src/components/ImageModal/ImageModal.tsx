@@ -1,6 +1,6 @@
 import Modal from 'react-modal';
 import css from './ImageModal.module.css';
-import { ImageData } from '../ImageGallery/ImageGallery';
+import { ImageData } from '../../images-api';
 
 interface Props {
   chosenImage: ImageData | null;
